@@ -6,13 +6,13 @@ abstract class Strategy {
 }
 
 class ConcreteStrategyA extends Strategy {
-  public algorithmInterface() {}
+  public override algorithmInterface() {}
 }
 class ConcreteStrategyB extends Strategy {
-  public algorithmInterface() {}
+  public override algorithmInterface() {}
 }
 class ConcreteStrategyC extends Strategy {
-  public algorithmInterface() {}
+  public override algorithmInterface() {}
 }
 
 // 上下文
@@ -38,7 +38,7 @@ abstract class CashSuper {
 }
 
 class CashNormal extends CashSuper {
-  public acceptCash(money: number): number {
+  public override acceptCash(money: number): number {
     return money
   }
 }
@@ -49,7 +49,7 @@ class CashRebate extends CashSuper {
     super()
     this.moneyRebate = parseFloat(moneyRebate)
   }
-  public acceptCash(money: number): number {
+  public override acceptCash(money: number): number {
     return money * this.moneyRebate
   }
 }
@@ -62,7 +62,7 @@ class CashReturn extends CashSuper {
     this.moneyCondition = parseFloat(moneyCondition)
     this.moneyReturn = parseFloat(moneyReturn)
   }
-  public acceptCash(money: number): number {
+  public override acceptCash(money: number): number {
     let result = money
     if (money >= this.moneyCondition) {
       result = money - Math.floor(money / this.moneyCondition) * this.moneyReturn

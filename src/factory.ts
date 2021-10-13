@@ -16,7 +16,7 @@ abstract class Operation {
   public abstract getResult(): number
 }
 class OperationAdd extends Operation {
-  public getResult(): number {
+  public override getResult(): number {
     let result = 0
     result = this.getNumberA() + this.getNumberB()
     return result
@@ -24,7 +24,7 @@ class OperationAdd extends Operation {
 }
 
 class OperationSub extends Operation {
-  public getResult(): number {
+  public override getResult(): number {
     let result = 0
     result = this.getNumberA() - this.getNumberB()
     return result
@@ -32,7 +32,7 @@ class OperationSub extends Operation {
 }
 
 class OperationMul extends Operation {
-  public getResult(): number {
+  public override getResult(): number {
     let result = 0
     result = this.getNumberA() * this.getNumberB()
     return result
@@ -40,7 +40,7 @@ class OperationMul extends Operation {
 }
 
 class OperationDiv extends Operation {
-  public getResult(): number {
+  public override getResult(): number {
     let result = 0
     if (this.getNumberB() === 0) throw new Error('除数不能为0')
     result = this.getNumberA() / this.getNumberB()
