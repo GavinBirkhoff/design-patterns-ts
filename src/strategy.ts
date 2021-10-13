@@ -47,7 +47,7 @@ class CashRebate extends CashSuper {
   private moneyRebate = 1
   constructor(moneyRebate: string) {
     super()
-    this.moneyRebate = parseInt(moneyRebate)
+    this.moneyRebate = parseFloat(moneyRebate)
   }
   public acceptCash(money: number): number {
     return money * this.moneyRebate
@@ -59,8 +59,8 @@ class CashReturn extends CashSuper {
   private moneyReturn = 0.0
   constructor(moneyCondition: string, moneyReturn: string) {
     super()
-    this.moneyCondition = parseInt(moneyCondition)
-    this.moneyReturn = parseInt(moneyReturn)
+    this.moneyCondition = parseFloat(moneyCondition)
+    this.moneyReturn = parseFloat(moneyReturn)
   }
   public acceptCash(money: number): number {
     let result = money
@@ -93,3 +93,5 @@ class CashContext {
     return this.cs!.acceptCash(money)
   }
 }
+
+export { CashContext }
