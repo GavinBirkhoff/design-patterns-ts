@@ -72,7 +72,7 @@ class CashReturn extends CashSuper {
 }
 
 class CashContext {
-  private cs: CashSuper | undefined
+  private cs?: CashSuper
   constructor(type: string) {
     switch (type) {
       case '正常收费':

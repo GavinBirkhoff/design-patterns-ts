@@ -57,7 +57,7 @@ d2.operation()
 
 // ConcreteComponent
 class Person {
-  private name: string | undefined
+  private name?: string
   constructor(name?: string) {
     this.name = name
   }
