@@ -58,19 +58,19 @@ npm run test
 
 ### 外观模式
 
-['default'](./src/facade.ts)
+[default](./src/facade.ts)
 
 外观模式（Facade），为子系统中一组接口提供一个一致的界面，此模式定义一个高层的接口，这个接口使得这一子系统更加的容易使用。
 
 ### 创造者模式
 
-['default'](./src/builder.ts)
+[default](./src/builder.ts)
 
 将一个复杂对象的创建和表示分离，使得同一个创建过程可以创建不同的表示。
 
 ### 观察者模式
 
-['default'](./src/observer.ts)
+[default](./src/observer.ts)
 
 观察者模式又叫发布-订阅（Publish/Subscribe）模式。观察者模式订阅了一对多的关系，让多个观察者监听某一个主题对象。这个主题对象在状态发生变化的时候通知所有观察者对象，使他们能够自动更新自己。
 
@@ -79,6 +79,8 @@ npm run test
 提供创建一些列相关或相互依赖对象的接口，而无需指定他们具体的类。
 
 ### 状态模式
+
+[工作状态](./src/state.ts)
 
 当一个对象的内在状态改变时允许改变其行为，这个对象看起来像是改变了其类。
 
