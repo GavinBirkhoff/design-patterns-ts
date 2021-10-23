@@ -9,6 +9,8 @@
 ```
 npm install
 npm run test
+
+注：少部分模式没有写test，没有写test可以直接运行相应文件看log。
 ```
 
 # design-patterns
