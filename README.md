@@ -71,19 +71,19 @@ npm run test
 
 ### 外观模式
 
-[default](./src/facade.ts)
+[E.g](./src/facade.ts)
 
 外观模式（Facade），为子系统中一组接口提供一个一致的界面，此模式定义一个高层的接口，这个接口使得这一子系统更加的容易使用。
 
 ### 创造者模式
 
-[default](./src/builder.ts)
+[E.g](./src/builder.ts)
 
 将一个复杂对象的创建和表示分离，使得同一个创建过程可以创建不同的表示。
 
 ### 观察者模式
 
-[default](./src/observer.ts)
+[E.g](./src/observer.ts)
 
 观察者模式又叫发布-订阅（Publish/Subscribe）模式。观察者模式订阅了一对多的关系，让多个观察者监听某一个主题对象。这个主题对象在状态发生变化的时候通知所有观察者对象，使他们能够自动更新自己。
 
@@ -101,13 +101,13 @@ npm run test
 
 ### 适配器模式
 
-[default](./src/adapter.ts)
+[E.g](./src/adapter.ts)
 
 将一个类的接口转换成客户需要的接口。
 
 ### 备忘录模式
 
-[default](./src/memento.ts)
+[E.g](./src/memento.ts)
 
 在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态。这样以后就可以将该对象恢复到原来的保存状态。
 
@@ -124,13 +124,13 @@ es6 语言本身已经提供
 
 ### 单例模式
 
-[default](./src/singleton.ts)
+[E.g](./src/singleton.ts)
 
 保证一个类仅有一个实例，并提供一个访问它的全局访问点。
 
 ### 桥接模式
 
-[default](./src/bridge.ts)
+[E.g](./src/bridge.ts)
 
 将抽象部分与实现部分分离，使他们都可以独立的变化。
 
